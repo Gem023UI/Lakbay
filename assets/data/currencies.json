@@ -1,0 +1,33 @@
+{
+  "base": "PHP",
+  "last_updated": "2026-10-10T00:00:00Z",
+  "rates": {
+    "THB": 0.60,
+    "PHP": 1.00,
+    "IDR": 274.50,
+    "VND": 435.00
+  },
+  "currencies": {
+    "THB": {
+      "name": "Thai Baht",
+      "symbol": "฿",
+      "country": "Thailand"
+    },
+    "PHP": {
+      "name": "Philippine Peso",
+      "symbol": "₱",
+      "country": "Philippines"
+    },
+    "IDR": {
+      "name": "Indonesian Rupiah",
+      "symbol": "Rp",
+      "country": "Indonesia"
+    },
+    "VND": {
+      "name": "Vietnamese Dong",
+      "symbol": "₫",
+      "country": "Vietnam"
+    }
+  }
+}
+

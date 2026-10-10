@@ -1,0 +1,419 @@
+[
+  {
+    "category": "Greetings",
+    "english": "Hello",
+    "foreign": "สวัสดี",
+    "phonetic": "Sawatdee",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Greetings",
+    "english": "Thank you",
+    "foreign": "ขอบคุณ",
+    "phonetic": "Khop khun",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Greetings",
+    "english": "Yes / No",
+    "foreign": "ใช่ / ไม่ใช่",
+    "phonetic": "Chai / Mai chai",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Dining",
+    "english": "Not spicy",
+    "foreign": "ไม่เผ็ด",
+    "phonetic": "Mai phet",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Dining",
+    "english": "Check please / Bill",
+    "foreign": "เช็คบิลด้วย",
+    "phonetic": "Chek bin duay",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Dining",
+    "english": "Delicious!",
+    "foreign": "อร่อยมาก",
+    "phonetic": "Aroy maak",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Shopping",
+    "english": "How much is this?",
+    "foreign": "อันนี้เท่าไหร่",
+    "phonetic": "An nee tao rai?",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Shopping",
+    "english": "Can you give a discount?",
+    "foreign": "ลดหน่อยได้ไหม",
+    "phonetic": "Lot noi dai mai?",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Directions",
+    "english": "Where is the restroom?",
+    "foreign": "ห้องน้ำอยู่ที่ไหน",
+    "phonetic": "Hong nam yoo tee nai?",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Directions",
+    "english": "Turn left / Turn right",
+    "foreign": "เลี้ยวซ้าย / เลี้ยวขวา",
+    "phonetic": "Liao sai / Liao khwa",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Transportation",
+    "english": "Airport",
+    "foreign": "สนามบิน",
+    "phonetic": "Sa-naam bin",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Transportation",
+    "english": "Train station",
+    "foreign": "สถานีรถไฟ",
+    "phonetic": "Sa-thaa-nee rot-fai",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Transportation",
+    "english": "How much to go here?",
+    "foreign": "ไปที่นี่เท่าไหร่",
+    "phonetic": "Pai tee nee tao rai?",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Emergency",
+    "english": "Help me please!",
+    "foreign": "ช่วยด้วย",
+    "phonetic": "Chuay duay!",
+    "countryCode": "TH"
+  },
+  {
+    "category": "Emergency",
+    "english": "Hospital / Doctor",
+    "foreign": "โรงพยาบาล / หมอ",
+    "phonetic": "Rong phayaban / Mor",
+    "countryCode": "TH"
+  },
+
+  {
+    "category": "Greetings",
+    "english": "Hello",
+    "foreign": "Xin chào",
+    "phonetic": "Sin chow",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Greetings",
+    "english": "Thank you",
+    "foreign": "Cảm ơn",
+    "phonetic": "Kam uhn",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Greetings",
+    "english": "Yes / No",
+    "foreign": "Vâng / Không",
+    "phonetic": "Vung / Khom",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Dining",
+    "english": "Not spicy",
+    "foreign": "Không cay",
+    "phonetic": "Khom kai",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Dining",
+    "english": "Bill please",
+    "foreign": "Tính tiền",
+    "phonetic": "Tin tyen",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Dining",
+    "english": "Very delicious!",
+    "foreign": "Rất ngon",
+    "phonetic": "Zuht ngon",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Shopping",
+    "english": "How much is this?",
+    "foreign": "Cái này bao nhiêu tiền?",
+    "phonetic": "Cai nay bao nyew tyen?",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Shopping",
+    "english": "Too expensive, discount?",
+    "foreign": "Đắt quá, bớt đi?",
+    "phonetic": "Daht kwa, buht dee?",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Directions",
+    "english": "Where is the restroom?",
+    "foreign": "Nhà vệ sinh ở đâu?",
+    "phonetic": "Nha ve sin uh dow?",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Directions",
+    "english": "Turn left / Turn right",
+    "foreign": "Rẽ trái / Rẽ phải",
+    "phonetic": "Reh try / Reh fye",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Transportation",
+    "english": "Airport",
+    "foreign": "Sân bay",
+    "phonetic": "Sun bye",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Transportation",
+    "english": "Bus station",
+    "foreign": "Bến xe",
+    "phonetic": "Ben seh",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Transportation",
+    "english": "Take me to this address",
+    "foreign": "Chở tôi đến địa chỉ này",
+    "phonetic": "Chuh toy den dee-ah chee nay",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Emergency",
+    "english": "Help!",
+    "foreign": "Cứu tôi với!",
+    "phonetic": "Kew toy vuh-ee!",
+    "countryCode": "VN"
+  },
+  {
+    "category": "Emergency",
+    "english": "Hospital / Police",
+    "foreign": "Bệnh viện / Công an",
+    "phonetic": "Ben vyen / Kom an",
+    "countryCode": "VN"
+  },
+
+  {
+    "category": "Greetings",
+    "english": "Hello",
+    "foreign": "Halo / Selamat",
+    "phonetic": "Hah-lo / Seh-lah-maht",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Greetings",
+    "english": "Thank you",
+    "foreign": "Terima kasih",
+    "phonetic": "Teh-ree-mah kah-see",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Greetings",
+    "english": "Yes / No",
+    "foreign": "Ya / Tidak",
+    "phonetic": "Yah / Tee-dahk",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Dining",
+    "english": "Not spicy",
+    "foreign": "Tidak pedas",
+    "phonetic": "Tee-dahk peh-dahs",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Dining",
+    "english": "Bill please",
+    "foreign": "Minta bon / Minta tagihan",
+    "phonetic": "Meen-tah bon",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Dining",
+    "english": "Delicious!",
+    "foreign": "Enak sekali!",
+    "phonetic": "Eh-nahk seh-kah-lee",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Shopping",
+    "english": "How much is this?",
+    "foreign": "Berapa harganya?",
+    "phonetic": "Beh-rah-pah har-gah-nyah?",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Shopping",
+    "english": "Can I bargain / discount?",
+    "foreign": "Bisa kurang?",
+    "phonetic": "Bee-sah koo-rahng?",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Directions",
+    "english": "Where is the restroom?",
+    "foreign": "Di mana toiletnya?",
+    "phonetic": "Dee mah-nah toy-leht-nyah?",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Directions",
+    "english": "Turn left / Turn right",
+    "foreign": "Belok kiri / Belok kanan",
+    "phonetic": "Beh-lok kee-ree / kah-nahn",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Transportation",
+    "english": "Airport",
+    "foreign": "Bandara",
+    "phonetic": "Bahn-dah-rah",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Transportation",
+    "english": "Station / Terminal",
+    "foreign": "Stasiun / Terminal",
+    "phonetic": "Stah-see-oon",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Transportation",
+    "english": "How much to go here?",
+    "foreign": "Berapa ongkos ke sini?",
+    "phonetic": "Beh-rah-pah ong-kos keh see-nee?",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Emergency",
+    "english": "Help!",
+    "foreign": "Tolong!",
+    "phonetic": "Toh-long!",
+    "countryCode": "ID"
+  },
+  {
+    "category": "Emergency",
+    "english": "Hospital / Police",
+    "foreign": "Rumah sakit / Polisi",
+    "phonetic": "Roo-mah sah-keet / Poh-lee-see",
+    "countryCode": "ID"
+  },
+
+  {
+    "category": "Greetings",
+    "english": "Hello",
+    "foreign": "Kumusta",
+    "phonetic": "Koo-moos-tah",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Greetings",
+    "english": "Thank you",
+    "foreign": "Salamat",
+    "phonetic": "Sah-lah-maht",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Greetings",
+    "english": "Yes / No",
+    "foreign": "Oo / Hindi",
+    "phonetic": "Oh-oh / Hin-dee",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Dining",
+    "english": "Not spicy",
+    "foreign": "Hindi maanghang",
+    "phonetic": "Hin-dee mah-ang-hang",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Dining",
+    "english": "Bill please",
+    "foreign": "Bill out po / Magkano po",
+    "phonetic": "Bill out po",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Dining",
+    "english": "Delicious!",
+    "foreign": "Napakasarap!",
+    "phonetic": "Nah-pah-kah-sah-rahp",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Shopping",
+    "english": "How much is this?",
+    "foreign": "Magkano po ito?",
+    "phonetic": "Mahg-kah-noh poh ee-toh?",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Shopping",
+    "english": "Can I have a discount?",
+    "foreign": "Pwedeng tumawad?",
+    "phonetic": "Pweh-deng too-mah-wahd?",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Directions",
+    "english": "Where is the restroom?",
+    "foreign": "Nasaan po ang banyo (CR)?",
+    "phonetic": "Nah-sah-ahn poh ahng bahn-yoh?",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Directions",
+    "english": "Turn left / Turn right",
+    "foreign": "Kaliwa / Kanan",
+    "phonetic": "Kah-lee-wah / Kah-nahn",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Transportation",
+    "english": "Airport",
+    "foreign": "Paliparan / Airport",
+    "phonetic": "Pah-lee-pah-rahn",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Transportation",
+    "english": "Where is the terminal / station?",
+    "foreign": "Saan po ang sakayan?",
+    "phonetic": "Sah-ahn poh ahng sah-kah-yahn?",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Emergency",
+    "english": "Help!",
+    "foreign": "Saklolo! / Tulong!",
+    "phonetic": "Sahk-loh-loh / Too-long!",
+    "countryCode": "PH"
+  },
+  {
+    "category": "Emergency",
+    "english": "Hospital / Police",
+    "foreign": "Ospital / Pulis",
+    "phonetic": "Ohs-pee-tahl / Poo-lees",
+    "countryCode": "PH"
+  }
+]
+

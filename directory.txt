@@ -1,0 +1,69 @@
+lakbay_lens/
+├── android/                      # minSdk, camera permission in AndroidManifest
+├── assets/
+│   ├── data/
+│   │   ├── currencies.json
+│   │   ├── countries.json
+│   │   └── phrasebook.json
+│   └── images/
+├── lib/
+│   ├── main.dart
+│   ├── app.dart                  # MaterialApp.router, theme
+│   ├── core/
+│   │   ├── router/app_router.dart
+│   │   ├── theme/app_theme.dart
+│   │   ├── constants/app_config.dart
+│   │   ├── utils/                # formatters, validators, image_utils.dart
+│   │   └── widgets/              # offline_banner, loading_state, error_state, empty_state, app_button
+│   ├── data/
+│   │   ├── database/
+│   │   │   ├── app_database.dart
+│   │   │   └── tables.dart
+│   │   └── repositories/
+│   │       ├── translation_history_repository.dart
+│   │       ├── exchange_rate_repository.dart
+│   │       ├── currency_history_repository.dart
+│   │       └── favorites_repository.dart
+│   ├── features/
+│   │   ├── home/
+│   │   │   └── home_screen.dart
+│   │   ├── translate/
+│   │   │   ├── data/
+│   │   │   │   ├── ocr_service.dart              # interface + ML Kit impl
+│   │   │   │   └── translation_service.dart      # interface + ML Kit impl
+│   │   │   ├── domain/
+│   │   │   │   ├── translation_result.dart
+│   │   │   │   └── translation_controller.dart   # OCR -> translate -> save
+│   │   │   └── presentation/
+│   │   │       ├── camera_screen.dart
+│   │   │       ├── result_screen.dart
+│   │   │       └── widgets/
+│   │   ├── languages/
+│   │   │   ├── supported_languages.dart
+│   │   │   ├── language_model_service.dart       # isReady / download / delete
+│   │   │   └── languages_screen.dart
+│   │   ├── currency/
+│   │   │   ├── exchange_rate_api.dart
+│   │   │   ├── currency_service.dart
+│   │   │   └── currency_screen.dart
+│   │   ├── history/
+│   │   │   └── history_screen.dart
+│   │   ├── phrasebook/
+│   │   │   ├── phrasebook_service.dart
+│   │   │   ├── tts_service.dart
+│   │   │   └── phrasebook_screen.dart
+│   │   ├── toolkit/
+│   │   │   ├── toolkit_data.dart
+│   │   │   └── toolkit_screen.dart
+│   │   └── settings/
+│   │       └── settings_screen.dart
+│   └── providers/
+│       └── providers.dart        # Riverpod wiring for services/repos
+├── test/
+│   ├── currency_service_test.dart
+│   ├── phrasebook_test.dart
+│   ├── translation_controller_test.dart   # uses mock OCR/translation services
+│   └── fixtures/
+├── pubspec.yaml
+├── analysis_options.yaml
+└── README.md

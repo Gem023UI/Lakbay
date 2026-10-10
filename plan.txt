@@ -1,0 +1,131 @@
+App Title: LAKBAY LENS — An Offline AI-Powered Travel Companion for ASEAN
+LAKBAY LENS is an offline-first, AI-powered mobile application that transforms how Filipino travelers, OFWs, students, and business travelers navigate language and currency barriers across ASEAN countries. Powered by on-device Optical Character Recognition (OCR), local machine translation, and cached currency conversion, the app allows users to point their camera at any text — signs, menus, documents, or labels — and instantly receive an English translation without needing an internet connection. By combining on-device AI, locally stored language models, and intelligent currency caching, LAKBAY LENS makes travel across Thailand, Vietnam, Indonesia, Malaysia, Cambodia, Laos, and Myanmar accessible and hassle-free even in areas with limited or no connectivity.
+Description
+LAKBAY LENS is a travel utility platform that removes two of the biggest barriers Filipino travelers face abroad: language and currency. Using the phone's camera, users can capture photos of text in Thai, Vietnamese, Bahasa (Indonesian/Malay), Khmer, Lao, Burmese, or Filipino and receive an instant English translation — all processed locally on the device.
+The application includes an offline currency converter that supports Philippine Peso (PHP) conversion to and from all ASEAN currencies. Exchange rates are cached when the user has internet access, then remain available offline with clear "last updated" timestamps so users always know how current their rates are.
+LAKBAY LENS is designed for real-world travel scenarios: ordering food, reading street signs, understanding transport schedules, haggling at markets, and managing budgets — all without needing a data plan or Wi-Fi connection
+Local AI: Implementation and Utilization
+LAKBAY LENS implements on-device AI through a combination of local OCR, on-device neural machine translation, and cached exchange rate processing, enabling the application to read, translate, and convert without sending any user data to external servers.
+The system uses a compact translation model, local image processing, on-device text recognition, and locally stored rate databases to support its core travel functionalities.
+
+
+On-Device OCR (Optical Character Recognition): The app uses a pre-trained, on-device OCR model (such as Google ML Kit's Text Recognition or PaddleOCR) to detect and extract text from photos. The model supports non-Latin scripts including Thai, Vietnamese (with diacritics), Khmer, Lao, Burmese, and Bahasa. All image processing occurs locally — no photos are uploaded to any server.
+On-Device Machine Translation: Once text is extracted, a compact on-device translation model converts it to English. Google ML Kit's Translation API supports all target languages with downloadable language packs (approximately 30 MB each). Users download only the languages they need, keeping the base app size small. The translation model uses English as a pivot language, which is optimal for this use case since the target output is always English.
+Locally Stored Language Packs and Knowledge Base: Language packs, OCR models, and translation models are stored on the device after initial download. Users can download language packs before traveling, then use the app entirely offline throughout their trip. The app retrieves translation data from local models rather than depending on cloud-based APIs.
+Offline Currency Conversion with Cached Rates: The app fetches live exchange rates (PHP to THB, VND, IDR, MYR, KHR, LAK, MMK, BND, SGD) when internet is available and caches them locally in SQLite. When offline, the app uses the last saved rates and displays a clear "Last updated: [date]" indicator. The conversion math runs instantly on-device.
+Privacy-Preserving Travel Data: Photos, translations, and conversion history are processed and stored locally. No images, text, or location data are transmitted to external servers. Optional cloud backup or synchronization can be enabled by the user when connectivity is available.
+The defining feature of LAKBAY LENS is that OCR, translation, and currency conversion are designed to run locally, rather than relying on cloud-based AI APIs. Internet connectivity is only necessary for optional activities such as downloading new language packs, updating exchange rates, or receiving application updates. Actual offline performance depends on the selected OCR and translation models, device hardware, and storage availability.
+Featured Functionalities
+1. AI-Powered Photo Translation (Offline)
+Capture photos of text using the phone's camera.
+On-device OCR extracts text from images in Thai, Vietnamese, Bahasa, Khmer, Lao, Burmese, and Filipino.
+Local translation model converts extracted text to English instantly.
+Support for single words, full sentences, and multi-paragraph text.
+Copy, save, or share translated text.
+Translation history stored locally for quick reference.
+Works entirely offline after language packs are downloaded.
+2. Multi-Language Support (ASEAN-Focused)
+Downloadable language packs for:
+
+
+Thai (Thailand)
+Vietnamese (Vietnam)
+Bahasa Indonesia (Indonesia)
+Bahasa Melayu (Malaysia, Brunei)
+Khmer (Cambodia)
+Lao (Laos)
+Burmese (Myanmar)
+Filipino (Philippines)
+Each language pack is approximately 30 MB.
+Users download only the languages they need for their trip.
+Language packs remain on the device permanently once downloaded.
+3. Gamified Learning and Character Customization
+Convert Philippine Peso (PHP) to and from all ASEAN currencies:
+Thai Baht (THB)
+Vietnamese Dong (VND)
+Indonesian Rupiah (IDR)
+Malaysian Ringgit (MYR)
+Cambodian Riel (KHR)
+Lao Kip (LAK)
+Burmese Kyat (MMK)
+Brunei Dollar (BND)
+Singapore Dollar (SGD)
+Cached exchange rates for offline use.
+Clear "Last updated" timestamp displayed on all conversions.
+Quick-access conversion widget for fast mental math.
+Conversion history for tracking expenses.
+4. Travel Phrasebook (Offline)
+Pre-loaded essential phrases for each ASEAN country:
+Greetings, directions, food ordering, emergencies, shopping, transportation.
+Text-to-speech pronunciation using on-device TTS.
+Save favorite phrases for quick access.
+Search phrases by category or keyword.
+5. Camera-First Interface
+Launch directly into camera mode for instant translation.
+Tap-to-focus and auto-detect text regions.
+Flash toggle for low-light environments (night markets, dim restaurants).
+Gallery import for translating text from saved screenshots or photos.
+Real-time overlay option for supported devices.
+6. Trip Toolkit
+Emergency contact numbers for each ASEAN country.
+Basic travel checklist and packing reminders.
+Local time zone converter.
+Tipping guide and cultural etiquette notes per country.
+Tech Stack
+Recommended implementation: Android-first mobile application with an on-device AI pipeline, local database, and optional web-based content management interface.
+Component
+Recommended Technologies
+Purpose
+Mobile Application
+Flutter, Dart
+Cross-platform mobile interface for Android and iOS.
+UI and Animation
+Flutter animations, Rive or Lottie
+Camera interface, translation animations, and smooth transitions.
+On-Device OCR
+Google ML Kit Text Recognition v2, or PaddleOCR (mobile-optimized)
+Extracting text from photos in multiple scripts
+On-Device Translation
+Google ML Kit Translation API (on-device mode)
+Translating extracted text to English without cloud APIs.
+Language Packs
+ML Kit downloadable translation models (~30 MB each)
+Offline translation for Thai, Vietnamese, Bahasa, Khmer, Lao, Burmese, Filipino.
+Local Database
+SQLite with Drift for Flutter
+Storing translation history, currency rates, journal entries, and user preferences..
+Currency Rate Caching
+REST API integration (online) + SQLite storage (offline)
+Fetching and caching exchange rates for offline conversion.
+Text-to-Speech
+Android Native TTS or Flutter TTS plugin
+Pronouncing travel phrases and translated text.
+Camera Integration
+Flutter camera plugin, image_picker
+Capturing and importing images for OCR processing.
+PDF/Image Processing
+mage package for Flutter, or native Android image APIs
+Pre-processing images for better OCR accuracy.
+Text-to-Speech
+Android native TTS or a compatible offline TTS engine
+Reading passages, questions, and instructions aloud.
+Backend and Synchronization
+Node.js, Express.js, and MongoDB
+optional cloud backup, cross-device sync, and rate updates.
+Authentication and Access Control
+Local PIN or biometric authentication
+Protecting personal travel data and journal entries.
+Data Visualization
+fl_chart for Flutter
+Displaying currency trends and travel expense summaries.
+Development and Testing
+Android Studio, VS Code, Git, and GitHub
+Development, version control, and testing across supported devices.
+
+Offline-first architecture: The mobile application, OCR, translation, currency conversion, and journal features operate on the device. The optional backend is used only for rate updates and cloud backup, not for core translation or conversion.
+
+For a hackathon prototype, the recommended starting point is Flutter + Google ML Kit (OCR + Translation) + SQLite, with 2–3 language packs (Thai, Vietnamese, Bahasa) and a simple currency converter with cached rates. Implement photo translation first, then add currency conversion and phrasebook features after confirming that OCR and translation perform reliably on target devices.
+
+The key technical challenge is balancing OCR accuracy, translation quality, storage requirements, and battery consumption on entry-level Android devices. The system should therefore use image pre-processing (contrast enhancement, deskewing), compact quantized models, and cached data. Translation accuracy for non-Latin scripts (Khmer, Lao, Burmese) should be treated as approximate, with users encouraged to verify critical information through other means when possible.
+
+

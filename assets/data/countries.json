@@ -1,0 +1,120 @@
+{
+  "TH": {
+    "name": "Thailand",
+    "timezone": "ICT (UTC+7, 1 hour behind Manila)",
+    "utc_offset_hours": 7,
+    "emergencies": [
+      {"label": "Tourist Police (English)", "number": "1155"},
+      {"label": "General Police", "number": "191"},
+      {"label": "Ambulance & Rescue", "number": "1669"},
+      {"label": "Fire Department", "number": "199"},
+      {"label": "Philippine Embassy (Bangkok)", "number": "+66 2 259 0139"}
+    ],
+    "tipping": [
+      "Restaurants: 10% service charge is often included; otherwise, leaving 20-50 THB change is customary.",
+      "Street food / local stalls: Tipping is not expected, but small change is appreciated.",
+      "Taxis: Rounding up to the nearest 10 or 20 THB is common practice.",
+      "Massage & Spas: 50-100 THB for good service is standard courtesy."
+    ],
+    "etiquette": [
+      "Wai Greeting: Press your palms together at chest level with a slight bow.",
+      "Royal Family: Treat all images and currency depicting the Royal Family with utmost respect (Lèse-majesté laws).",
+      "Temples: Remove shoes before entering; dress modestly covering shoulders and knees.",
+      "Feet & Head: The head is considered sacred (do not touch someone's head). Never point the soles of your feet at people or Buddha images."
+    ],
+    "checklist": [
+      "Passport with at least 6 months validity",
+      "Power plug adapter (Type A/B/C - 220V)",
+      "Lightweight, breathable clothing + modest temple attire",
+      "Insect repellent & sunscreen",
+      "Cash (Thai Baht) for street markets & transport",
+      "Offline translation & map downloads"
+    ]
+  },
+  "VN": {
+    "name": "Vietnam",
+    "timezone": "ICT (UTC+7, 1 hour behind Manila)",
+    "utc_offset_hours": 7,
+    "emergencies": [
+      {"label": "Police", "number": "113"},
+      {"label": "Ambulance", "number": "115"},
+      {"label": "Fire Department", "number": "114"},
+      {"label": "Philippine Embassy (Hanoi)", "number": "+84 24 3943 7873"},
+      {"label": "Philippine Consulate (HCMC)", "number": "+84 28 3518 0045"}
+    ],
+    "tipping": [
+      "Restaurants: Tipping is not strictly mandatory, but 5-10% is polite in tourist spots.",
+      "Taxis: Rounding up the fare is customary.",
+      "Tour Guides: 100,000 - 200,000 VND/day per person is customary."
+    ],
+    "etiquette": [
+      "Crossing streets: Walk slowly and steadily; scooters will navigate around you.",
+      "Temples & Pagodas: Dress conservatively; remove hats and shoes when entering inner sanctuaries.",
+      "Chopsticks: Never stick chopsticks vertically in a bowl of rice (resembles incense at funerals)."
+    ],
+    "checklist": [
+      "Passport & Vietnam Visa (e-Visa if applicable)",
+      "Vietnamese Dong (VND) cash - cash is king for street food",
+      "Stomach medicine (carbon pills, probiotics)",
+      "Rain poncho or umbrella (tropical weather)",
+      "Grab app installed for reliable taxi booking"
+    ]
+  },
+  "ID": {
+    "name": "Indonesia",
+    "timezone": "WIB (UTC+7 in Jakarta) / WITA (UTC+8 in Bali)",
+    "utc_offset_hours": 7,
+    "emergencies": [
+      {"label": "Police", "number": "110"},
+      {"label": "Ambulance", "number": "118 / 119"},
+      {"label": "Search & Rescue", "number": "115"},
+      {"label": "Philippine Embassy (Jakarta)", "number": "+62 21 310 0334"}
+    ],
+    "tipping": [
+      "Restaurants: Many add 5-10% service charge. Leaving extra 10,000 - 20,000 IDR is appreciated.",
+      "Taxis: Rounding up to the nearest 5,000 or 10,000 IDR is standard.",
+      "Hotel Porters: 10,000 - 20,000 IDR per bag."
+    ],
+    "etiquette": [
+      "Right Hand Only: Use your right hand to give or receive items and to eat; the left hand is considered unclean.",
+      "Dress code: Wear a sarong and sash when visiting Balinese temples (often rentable at entrance).",
+      "Public Behavior: Avoid loud public displays of anger or physical intimacy."
+    ],
+    "checklist": [
+      "Passport valid for at least 6 months",
+      "Customs Declaration (e-CD) QR code",
+      "Power plug adapter (Type C/F two-round pins)",
+      "Sunblock & beach/outdoor activewear",
+      "Cash (IDR) in smaller denominations for convenience"
+    ]
+  },
+  "PH": {
+    "name": "Philippines",
+    "timezone": "PST (UTC+8, Manila Time)",
+    "utc_offset_hours": 8,
+    "emergencies": [
+      {"label": "National Emergency Hotline", "number": "911"},
+      {"label": "Philippine National Police (PNP)", "number": "117"},
+      {"label": "Philippine Red Cross", "number": "143"},
+      {"label": "Bureau of Fire Protection", "number": "(02) 8426 0219"}
+    ],
+    "tipping": [
+      "Restaurants: 10% is standard if service charge is not yet included in the bill.",
+      "Taxis / Rides: Rounding up or giving 20-50 PHP extra is appreciated.",
+      "Delivery / Service staff: 20-50 PHP is polite."
+    ],
+    "etiquette": [
+      "Respect to Elders: 'Mano po' (placing elder's hand to forehead) and using 'po' and 'opo'.",
+      "Friendliness: Warm smiles and hospitality are ubiquitous.",
+      "Punctuality: Account for local traffic in metropolitan cities."
+    ],
+    "checklist": [
+      "Government-issued ID or passport",
+      "eTravel QR registration code",
+      "Philippine Peso (PHP) cash for tricycle/jeepney fares",
+      "Powerbank & waterproof pouch for island tours",
+      "Universal adapter (Type A/B/C)"
+    ]
+  }
+}
+
