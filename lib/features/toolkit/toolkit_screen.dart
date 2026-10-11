@@ -3,14 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:image_picker/image_picker.dart';
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/constants/app_config.dart';
 import '../../core/theme/app_theme.dart';
 import '../../providers/providers.dart';
-import '../translate/presentation/translate_flow.dart';
 import 'toolkit_data.dart';
 
 class ToolkitScreen extends ConsumerStatefulWidget {
@@ -119,7 +116,6 @@ class _ToolkitScreenState extends ConsumerState<ToolkitScreen> {
 
     return Scaffold(
       backgroundColor: const Color(0xFFF7F8F4),
-      bottomNavigationBar: _buildBottomNav(context, ref),
       body: SafeArea(
         bottom: false,
         child: Column(
@@ -920,57 +916,6 @@ class _ToolkitScreenState extends ConsumerState<ToolkitScreen> {
     );
   }
 
-  // --- Bottom Navigation Bar ---
-  Widget _buildBottomNav(BuildContext context, WidgetRef ref) {
-    return Container(
-      decoration: const BoxDecoration(
-        color: Color(0xFFFBFBF8),
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-        boxShadow: [
-          BoxShadow(
-            color: Color(0x0C000000),
-            blurRadius: 16,
-            offset: Offset(0, -4),
-          ),
-        ],
-      ),
-      child: SafeArea(
-        top: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _NavItem(
-                icon: Icons.home_filled,
-                label: 'Home',
-                isSelected: false,
-                onTap: () => context.go('/home'),
-              ),
-              _NavItem(
-                icon: Icons.crop_free_rounded,
-                label: 'Scan',
-                isSelected: false,
-                onTap: () => startImageFlow(context, ref, ImageSource.camera),
-              ),
-              _NavItem(
-                icon: Icons.menu_book_outlined,
-                label: 'Phrasebook',
-                isSelected: false,
-                onTap: () => context.go('/phrasebook'),
-              ),
-              _NavItem(
-                icon: Icons.work_outline_rounded,
-                label: 'Toolkit',
-                isSelected: true,
-                onTap: () {},
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 }
 
 // --- Manila Clock Widget ---
@@ -1075,56 +1020,7 @@ class _CustomToolkitIcon extends StatelessWidget {
   }
 }
 
-// --- Nav Item ---
-class _NavItem extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final bool isSelected;
-  final VoidCallback onTap;
 
-  const _NavItem({
-    required this.icon,
-    required this.label,
-    required this.isSelected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      behavior: HitTestBehavior.opaque,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            color: isSelected ? const Color(0xFF0F382A) : const Color(0xFF86968B),
-            size: 24,
-          ),
-          const SizedBox(height: 3),
-          Text(
-            label,
-            style: TextStyle(
-              fontSize: 10.5,
-              fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
-              color: isSelected ? const Color(0xFF0F382A) : const Color(0xFF86968B),
-            ),
-          ),
-          const SizedBox(height: 3),
-          Container(
-            height: 2.5,
-            width: 22,
-            decoration: BoxDecoration(
-              color: isSelected ? const Color(0xFF0F382A) : Colors.transparent,
-              borderRadius: BorderRadius.circular(2),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
 
 // --- Mountain Logo Widget ---
 class _MountainLogo extends StatelessWidget {

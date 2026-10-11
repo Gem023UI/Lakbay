@@ -92,7 +92,13 @@ class _CurrencyScreenState extends ConsumerState<CurrencyScreen> {
                   child: Row(
                     children: [
                       GestureDetector(
-                        onTap: () => context.pop(),
+                        onTap: () {
+                          if (context.canPop()) {
+                            context.pop();
+                          } else {
+                            context.go('/home');
+                          }
+                        },
                         child: Container(
                           width: 38,
                           height: 38,

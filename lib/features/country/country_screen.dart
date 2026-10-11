@@ -53,8 +53,6 @@ class _CountryScreenState extends ConsumerState<CountryScreen> {
         return 'assets/images/countries/thailand/place/bangkok.png';
       case 'VN':
         return 'assets/images/countries/vietnam/place/halong.png';
-      case 'PH':
-        return 'assets/images/countries/philippines/place/palawan.png';
       case 'ID':
       default:
         return 'assets/images/countries/indonesia/place/borobudur.png';

@@ -50,7 +50,13 @@ class _PhrasebookScreenState extends ConsumerState<PhrasebookScreen> {
               child: Row(
                 children: [
                   GestureDetector(
-                    onTap: () => Navigator.of(context).pop(),
+                    onTap: () {
+                      if (context.canPop()) {
+                        context.pop();
+                      } else {
+                        context.go('/home');
+                      }
+                    },
                     child: Container(
                       width: 38,
                       height: 38,

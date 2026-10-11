@@ -28,7 +28,7 @@ class AppConfig {
   AppConfig._();
 
   static const appTitle = 'LAKBAY.';
-  static const tagline = 'Point. Read. Understand.';
+  static const tagline = 'Offline AI-Powered Travel Companion\nfor ASEAN Travelers';
   static const backgroundAsset = 'assets/images/LAKBAY..png';
 
   static const philippines = Country(
@@ -72,7 +72,7 @@ class AppConfig {
     currencySymbol: '฿',
   );
 
-  static const countries = <Country>[philippines, indonesia, vietnam, thailand];
+  static const countries = <Country>[indonesia, vietnam, thailand];
   static const defaultCountry = indonesia;
 }
 
